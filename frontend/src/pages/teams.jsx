@@ -28,7 +28,7 @@ const people = [
 
 export default function AboutUs() {
   return (
-    <div className="bg-white py-24 sm:py-58" id='about-section'>
+    <div className="bg-white py-24 sm:py-58 -mb-10 mt-3" id='about-section'>
       <div className="mx-auto grid max-w-10xl gap-20 px-6 lg:px-8 xl:grid-cols-3 relative isolate">
       <div  
           aria-hidden="true"

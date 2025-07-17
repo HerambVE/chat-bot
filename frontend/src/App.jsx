@@ -30,8 +30,8 @@ function App() {
               <span className="sr-only">Mindful Journey</span>
               <img
                 alt="Mindful Journey Logo" // Added alt text
-                src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=600"
-                className="h-8 w-auto"
+                src="/lOGO.png"
+                className="size-18 w-auto"
               />
             </a>
           </div>
@@ -107,10 +107,7 @@ function App() {
                   ))}
                 </div>
                 <div className="py-6">
-                  <Link
-                    to="/chat"
-                    className="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
-                  >
+                  <Link to="/chat" className="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">
                     Chat
                   </Link>
                 </div>
