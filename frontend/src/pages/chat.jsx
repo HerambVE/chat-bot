@@ -1,4 +1,3 @@
-import './chat.css';
 import SearchBox from '../component/searchbox'
 export default function Chat(){
     return(
