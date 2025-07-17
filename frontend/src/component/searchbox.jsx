@@ -1,5 +1,3 @@
-import './searchbox.css';
-import React from 'react';
 export default function SearchBox(){
     const userChat = (event)=>{
         event.preventDefault();

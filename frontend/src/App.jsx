@@ -3,6 +3,7 @@ import './App.css';
 import Example from './pages/hero';
 import AboutUs from './pages/teams';
 import { Dialog, DialogPanel } from '@headlessui/react';
+import { Link } from 'react-router-dom';
 
 
 const navigation = [
@@ -60,9 +61,9 @@ function App() {
             ))}
           </div>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-            <a href="#" className="p-3 rounded-2xl text-xl/6 font-semibold text-gray-900">
+            <Link to="/chat" className="p-3 rounded-2xl text-xl/6 font-semibold text-gray-900">
               Chat <span aria-hidden="true">&rarr;</span>
-            </a>
+            </Link>
           </div>
         </nav>
 
@@ -106,12 +107,12 @@ function App() {
                   ))}
                 </div>
                 <div className="py-6">
-                  <a
-                    href="#"
+                  <Link
+                    to="/chat"
                     className="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
                   >
                     Chat
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -119,7 +120,6 @@ function App() {
         </Dialog>
       </header>
 
-      {/* Main Content Sections - Add IDs for scrolling */}
       <section id="home-section">
         <Example />
       </section>
