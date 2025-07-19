@@ -1,13 +1,24 @@
 import express from 'express';
-const app = express();
+import cors from 'cors';
 import 'dotenv/config';
+
+const app = express();
 const PORT = process.env.PORT || 3000;
 
-app.get('/', (req,res)=>{
-    res.send('hello cok')
+app.use(cors({
+    origin: 'http://localhost:5173',
+}));
+app.use(express.json());
+
+app.post('/', (req, res) => {
+    res.send({reply:"suck my dick"});
 });
 
-app.listen(PORT, ()=>{
-    console.log(`server is running on port ${PORT}`);
-    console.log(`http://localhost:${PORT}`)
+app.get('/', (req, res) => {
+    res.send('hello cok');
+});
+
+app.listen(PORT, () => {
+    console.log(`Server is running on port ${PORT}`);
+    console.log(`http://localhost:${PORT}`);
 });

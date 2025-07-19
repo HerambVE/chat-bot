@@ -61,7 +61,7 @@ function App() {
             ))}
           </div>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-            <Link to="/chat" className="p-3 rounded-2xl text-xl/6 font-semibold text-gray-900">
+            <Link to="/chat" className="p-3 rounded-2xl text-xl/6 font-semibold text-gray-900 hover:bg-gray-100">
               Chat <span aria-hidden="true">&rarr;</span>
             </Link>
           </div>
