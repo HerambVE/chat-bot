@@ -8,7 +8,8 @@ import { Link } from 'react-router-dom';
 
 const navigation = [
   { name: 'Home', href: 'home-section' },
-  { name: 'About Us', href: 'about-section' },
+  { name: 'About Us', href: 'team-section' },
+  { name: 'Team', href: 'team-section' },
 ];
 
 function App() {
@@ -23,10 +24,10 @@ function App() {
 
   return (
     <>
-      <header className="fixed inset-x-2 bg-[rgba(250,250,250,40%)] border-amber-50 backdrop-blur-md top-0 z-50 rounded-3xl">
+      <header className="fixed inset-x-7 bg-[rgba(250,250,250,40%)] border-amber-50 backdrop-blur-md top-2 z-50 rounded-3xl">
         <nav aria-label="Global" className="flex items-center justify-between p-4 lg:px-8">
           <div className="flex lg:flex-1">
-            <a href="#" className="-m-1.5 p-1.5">
+            <a href="#" className="-m-2 p-1.5">
               <span className="sr-only">Mindful Journey</span>
               <img
                 alt="Mindful Journey Logo" // Added alt text
@@ -120,7 +121,7 @@ function App() {
       <section id="home-section">
         <Example />
       </section>
-      <section id="about-section">
+      <section id="team-section">
         <AboutUs />
       </section>
     </>

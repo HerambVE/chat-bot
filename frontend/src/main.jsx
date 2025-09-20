@@ -2,6 +2,7 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.jsx'
 import Chat from './pages/chat.jsx'
+import Notfound from './pages/notfound.jsx'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
 createRoot(document.getElementById('root')).render(
@@ -9,6 +10,7 @@ createRoot(document.getElementById('root')).render(
   <Routes>
     <Route path="/" element={<App/>}/>
     <Route path="/chat" element={<Chat/>}/>
+    <Route path="*" element={<Notfound/>}/>
   </Routes>
   </BrowserRouter>,
 )

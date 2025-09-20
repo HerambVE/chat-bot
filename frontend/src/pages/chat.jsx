@@ -3,15 +3,14 @@ import Box from '../component/messageBox'
 import { Link } from 'react-router-dom'
 import { useState, useEffect, useRef } from 'react'
 
-
 export default function Chat(){
 
   const messagesEndRef = useRef(null);
   let[message,setMessage]=useState([
     {
       id:Date.now(),
-      usertext:"This is test message",
-      replytext:"Your friendly chatbot replies this was"
+      usertext:"These are user messages",
+      replytext:"Your friendly chatbot's reply will appear here"
     }
   ]);
 
@@ -48,8 +47,9 @@ export default function Chat(){
                     <section className="bg-[rgba(253,253,253,80%)] h-[85%] backdrop-blur-md flex-box rounded-2xl overflow-y-auto max-h-[85%]">
                     {
                       message.map((item)=>{
-                      console.log(item.replytext);
-                      return(<Box key={item.id} message={item}/>)})
+                        {/* console.log(item.replytext); */}
+                        return(<Box key={item.id} message={item}/>)
+                      })
                     }           
                     </section>
                   
@@ -59,7 +59,7 @@ export default function Chat(){
                   </div>
 
                 
-                <p className='justify-self-center absolute mt-1 opacity-50'>This is a generated text please fuck off</p>
+                <p className='justify-self-center absolute mt-1 opacity-50'>- You will get the same output if backend is not running -</p>
               </div>
         </div>
         <div aria-hidden="true" className="fixed inset-x-0 top-[calc(100%-30rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-45rem)]">
