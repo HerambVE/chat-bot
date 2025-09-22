@@ -1,5 +1,3 @@
-# README: Mental Health Chatbot
-
 ## Project Overview
 This project is a mental health chatbot designed to offer supportive and helpful conversations. It uses a unique, powerful combination of two AI models: a fine-tuned **RoBERTa-base GoEmotions model** for understanding user emotions and the **Gemini model** for generating compassionate and relevant responses. The chatbot is built with a **Node.js** backend and a **React** frontend, styled with **Tailwind CSS**.
 
